@@ -1,4 +1,5 @@
 #include "..\Inc\SpriteManager.h"
+#include<iostream>
 
 std::vector<sf::Texture*> images;
 
@@ -16,4 +17,9 @@ sf::Sprite SpriteManager::makeSprite(sf::String filepath){
 void SpriteManager::draw(sf::Sprite sprite, float x, float y, sf::RenderWindow &window){
 	sprite.setPosition(x, y);
 	window.draw(sprite);
+}
+
+void SpriteManager::draw (sf::Text button_text, sf::RenderWindow &window) {
+	sf::Text text = button_text;
+	window.draw (text);//Freezes game...  =(
 }

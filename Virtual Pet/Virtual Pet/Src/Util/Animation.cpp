@@ -21,19 +21,14 @@ void Animation::draw (RenderWindow *window, int x, int y) {
 }
 
 void Animation::update () {
-	//time++;
-	//if (time == 600) {
-		frame.left += frame.width;
-		if (frame.left >= src_rect.left + src_rect.width) {//if animation is overran.
-			frame.left = src_rect.left;
-			frame.top += frame.height;
-			if (frame.top >= src_rect.top + src_rect.height) {
-				//if (is_looped)
+	frame.left += frame.width;
+	if (frame.left >= src_rect.left + src_rect.width) {//if animation is overran.
+		frame.left = src_rect.left;
+		frame.top += frame.height;
+		if (frame.top >= src_rect.top + src_rect.height) {
+			//if (is_looped)
 				frame.top = src_rect.top;
 				frame.left = src_rect.left;
-			}
 		}
-	//}
-	//if (time == 600)
-		//time = 0;
+	}
 }

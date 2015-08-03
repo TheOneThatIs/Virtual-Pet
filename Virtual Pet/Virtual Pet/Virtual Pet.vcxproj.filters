@@ -27,6 +27,12 @@
     <Filter Include="Source Files\UI">
       <UniqueIdentifier>{0b39bfcb-afa9-4627-b885-f41641054329}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Pets">
+      <UniqueIdentifier>{8428e737-84cc-4df5-a7aa-c3bd5a1e783a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pets">
+      <UniqueIdentifier>{b25b1a9c-6cf5-4a27-ab9e-6a7bc597f8e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -59,6 +65,24 @@
     <ClCompile Include="Src\Util\Animation.cpp">
       <Filter>Source Files\Util</Filter>
     </ClCompile>
+    <ClCompile Include="Src\States\ChooseProperty.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Properties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Pet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Pets\Pet.cpp">
+      <Filter>Source Files\Pets</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\World\World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\GameCore.h">
@@ -90,6 +114,21 @@
     </ClInclude>
     <ClInclude Include="Inc\Util\Animation.h">
       <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\States\ChooseProperty.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Properties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Pets\Pet.h">
+      <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\World\World.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

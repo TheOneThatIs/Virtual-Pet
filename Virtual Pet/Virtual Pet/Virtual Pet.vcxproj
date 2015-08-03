@@ -72,7 +72,12 @@
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Src\GameCore.cpp" />
+    <ClCompile Include="Src\Pet.cpp" />
+    <ClCompile Include="Src\Pets\Pet.cpp" />
+    <ClCompile Include="Src\Player.cpp" />
+    <ClCompile Include="Src\Properties.cpp" />
     <ClCompile Include="Src\SpriteManager.cpp" />
+    <ClCompile Include="Src\States\ChooseProperty.cpp" />
     <ClCompile Include="Src\States\Play.cpp" />
     <ClCompile Include="Src\States\State.cpp" />
     <ClCompile Include="Src\States\StateManager.cpp" />
@@ -80,10 +85,15 @@
     <ClCompile Include="Src\UI\Button.cpp" />
     <ClCompile Include="Src\Util\Animation.cpp" />
     <ClCompile Include="Src\Util\MathUtilites.cpp" />
+    <ClCompile Include="Src\World\World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\GameCore.h" />
+    <ClInclude Include="Inc\Pets\Pet.h" />
+    <ClInclude Include="Inc\Player.h" />
+    <ClInclude Include="Inc\Properties.h" />
     <ClInclude Include="Inc\SpriteManager.h" />
+    <ClInclude Include="Inc\States\ChooseProperty.h" />
     <ClInclude Include="Inc\States\Play.h" />
     <ClInclude Include="Inc\States\State.h" />
     <ClInclude Include="Inc\States\StateManager.h" />
@@ -92,6 +102,7 @@
     <ClInclude Include="Inc\Util\Animation.h" />
     <ClInclude Include="Inc\Util\MathUtilites.h" />
     <ClInclude Include="Inc\Util\Utilities.h" />
+    <ClInclude Include="Inc\World\World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

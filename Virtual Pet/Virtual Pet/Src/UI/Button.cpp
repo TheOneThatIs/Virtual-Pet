@@ -2,8 +2,15 @@
 #include<iostream>
 #include "Util\Utilities.h"
 
-Button::Button (sf::Sprite, int width, int height) {
+Button::Button (sf::String text, int width, int height) {
+	font.loadFromFile ("Resources/Fonts/consola.ttf");
+	this->text.setFont (font);
+	this->text.setString(text);
+	this->text.setCharacterSize (24);
+	this->text.setColor (Color::Black);
 
+	this->width = width;
+	this->height = height;
 }
 
 Button::Button () {
@@ -11,12 +18,11 @@ Button::Button () {
 	height = 25;
 }
 
-Button::~Button(){
-
-}
+Button::~Button () {}
 
 void Button::draw (sf::RenderWindow *window) {
 	sprite_mangr.draw (button, x, y, *window);
+	sprite_mangr.draw (text, *window);
 }
 
 bool Button::handleEvents (sf::Event event) {

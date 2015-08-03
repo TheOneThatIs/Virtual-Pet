@@ -13,6 +13,7 @@ FloatRect size(0, 0, WIDTH, HEIGHT);
 
 GameCore::GameCore(){
 	window.setView(View(size));
+	window.setFramerateLimit (30);//  =)
 
 	isfullscreen = false; 
 	init();
@@ -25,14 +26,14 @@ void GameCore::gameLoop() {
 	float accumulator = 0.f;
 
 	while (window.isOpen()) {
-		Time dt = clock.restart ();
-		accumulator += dt.asSeconds ();
-		while (accumulator >= TIME_STEP) {
+		//Time dt = clock.restart ();
+		//accumulator += dt.asSeconds ();
+		//while (accumulator >= TIME_STEP) {
 			handleEvents();
 			update();
 
-			accumulator -= TIME_STEP;
-		}
+			//accumulator -= TIME_STEP;
+		//}
 
 		draw();
 	}
