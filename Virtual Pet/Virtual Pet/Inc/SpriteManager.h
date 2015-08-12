@@ -4,6 +4,7 @@
 #include <vector>
 
 class SpriteManager{
+	sf::Font font;
 	int progress, time;
 public:
 	SpriteManager();

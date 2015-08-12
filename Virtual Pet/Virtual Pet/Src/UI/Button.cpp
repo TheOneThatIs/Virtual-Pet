@@ -2,15 +2,20 @@
 #include<iostream>
 #include "Util\Utilities.h"
 
-Button::Button (sf::String text, int width, int height) {
-	font.loadFromFile ("Resources/Fonts/consola.ttf");
-	this->text.setFont (font);
+Button::Button (sf::String text, float x, float y, int width, int height) {
+	this->x = x;
+	this->y = y;
+
+	this->text.setCharacterSize (10);
+	this->text.setColor (sf::Color::Black);
 	this->text.setString(text);
-	this->text.setCharacterSize (24);
-	this->text.setColor (Color::Black);
 
 	this->width = width;
 	this->height = height;
+
+	FloatRect text_rect = this->text.getLocalBounds ();
+	this->text.setOrigin (text_rect.width / 2, text_rect.height / 2);
+	this->text.setPosition ((x + (width / 2)) - (this->text.getLocalBounds ().width/2), y + (height / 2));
 }
 
 Button::Button () {
@@ -37,9 +42,4 @@ bool Button::handleEvents (sf::Event event) {
 		else return false;
 	}
 	else return false;
-}
-
-void Button::setPos (float x, float y) {
-	this->x = x;
-	this->y = y;
 }

@@ -2,7 +2,6 @@
 #include "States\ChooseProperty.h"
 
 TitleScreen::TitleScreen () {
-	button.setPos (350, 300);
 	title = sprite_mangr.makeSprite ("Resources/Textures/Title Screen.png");
 }
 

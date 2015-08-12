@@ -1,4 +1,4 @@
-#include "..\Inc\Pet.h"
+#include "..\Inc\Pets\Pet.h"
 
 
 Pet::Pet () {

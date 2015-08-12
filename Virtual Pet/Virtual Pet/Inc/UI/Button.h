@@ -4,7 +4,6 @@
 #include "SpriteManager.h"
 
 class Button{
-	sf::Font font;
 
 	sf::Text text;
 
@@ -13,11 +12,10 @@ class Button{
 	float x, y;
 	int width, height;
 public:
-	Button(sf::String text, int width, int height);
+	Button (sf::String text, float x, float y, int width, int height);
 	Button();
 	~Button();
 
 	void draw (sf::RenderWindow *window);
 	bool handleEvents(sf::Event event);
-	void setPos (float x, float y);
 };

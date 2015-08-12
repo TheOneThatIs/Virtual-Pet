@@ -20,6 +20,8 @@ void SpriteManager::draw(sf::Sprite sprite, float x, float y, sf::RenderWindow &
 }
 
 void SpriteManager::draw (sf::Text button_text, sf::RenderWindow &window) {
-	sf::Text text = button_text;
-	window.draw (text);//Freezes game...  =(
+	font.loadFromFile ("Resources/Fonts/consola.ttf");
+
+	button_text.setFont (font);
+	window.draw (button_text);
 }

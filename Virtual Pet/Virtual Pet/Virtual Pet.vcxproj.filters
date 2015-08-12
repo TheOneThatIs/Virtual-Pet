@@ -74,14 +74,11 @@
     <ClCompile Include="Src\Properties.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Pet.cpp">
+    <ClCompile Include="Src\World\World.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Src\Pets\Pet.cpp">
       <Filter>Source Files\Pets</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\World\World.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,11 +121,16 @@
     <ClInclude Include="Inc\Properties.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Inc\Pets\Pet.h">
-      <Filter>Header Files\Pets</Filter>
-    </ClInclude>
     <ClInclude Include="Inc\World\World.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Inc\Pets\Pet.h">
+      <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

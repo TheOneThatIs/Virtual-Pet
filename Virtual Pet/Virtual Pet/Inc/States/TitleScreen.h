@@ -4,7 +4,7 @@
 #include "UI\Button.h"
 
 class TitleScreen: public State {
-	Button button = Button("New Game", 100, 25);
+	Button button = Button("New Game", 350, 300, 100, 25);
 	sf::Sprite title;
 public:
 	TitleScreen ();
