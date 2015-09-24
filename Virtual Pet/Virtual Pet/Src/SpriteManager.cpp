@@ -19,9 +19,12 @@ void SpriteManager::draw(sf::Sprite sprite, float x, float y, sf::RenderWindow &
 	window.draw(sprite);
 }
 
-void SpriteManager::draw (sf::Text button_text, sf::RenderWindow &window) {
+void SpriteManager::draw (sf::Text button_text, int x, int y, int width, int height, sf::RenderWindow &window) {
 	font.loadFromFile ("Resources/Fonts/consola.ttf");
 
 	button_text.setFont (font);
+	sf::FloatRect text_rect = button_text.getLocalBounds ();
+	button_text.setPosition ((x + (width / 2)) - (button_text.getLocalBounds ().width / 2), (y + (height / 2)) - (button_text.getLocalBounds ().height));//Centers text to button.
+
 	window.draw (button_text);
 }

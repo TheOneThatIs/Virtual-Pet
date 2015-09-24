@@ -80,6 +80,9 @@
     <ClCompile Include="Src\Pets\Pet.cpp">
       <Filter>Source Files\Pets</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Util\File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\GameCore.h">
@@ -126,6 +129,9 @@
     </ClInclude>
     <ClInclude Include="Inc\Pets\Pet.h">
       <Filter>Header Files\Pets</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Util\File.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

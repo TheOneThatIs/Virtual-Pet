@@ -85,6 +85,7 @@
     <ClCompile Include="Src\States\TitleScreen.cpp" />
     <ClCompile Include="Src\UI\Button.cpp" />
     <ClCompile Include="Src\Util\Animation.cpp" />
+    <ClCompile Include="Src\Util\File.cpp" />
     <ClCompile Include="Src\Util\MathUtilites.cpp" />
     <ClCompile Include="Src\World\World.cpp" />
   </ItemGroup>
@@ -101,6 +102,7 @@
     <ClInclude Include="Inc\States\TitleScreen.h" />
     <ClInclude Include="Inc\UI\Button.h" />
     <ClInclude Include="Inc\Util\Animation.h" />
+    <ClInclude Include="Inc\Util\File.h" />
     <ClInclude Include="Inc\Util\MathUtilites.h" />
     <ClInclude Include="Inc\Util\Utilities.h" />
     <ClInclude Include="Inc\World\World.h" />

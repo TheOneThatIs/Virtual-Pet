@@ -1,4 +1,4 @@
-#define WIDTH 800
+#define WIDTH 900
 #define HEIGHT 600
 #define TITLE "Jonathan Jackson's Template v0.1"
 
@@ -26,14 +26,14 @@ void GameCore::gameLoop() {
 	float accumulator = 0.f;
 
 	while (window.isOpen()) {
-		//Time dt = clock.restart ();
-		//accumulator += dt.asSeconds ();
-		//while (accumulator >= TIME_STEP) {
+		Time dt = clock.restart ();
+		accumulator += dt.asSeconds ();
+		while (accumulator >= TIME_STEP) {
 			handleEvents();
 			update();
 
-			//accumulator -= TIME_STEP;
-		//}
+			accumulator -= TIME_STEP;
+		}
 
 		draw();
 	}

@@ -1,8 +1,16 @@
 #pragma once
+
 #include "States\State.h"
+#include "UI\Button.h"
+
 class ChooseProperty: public State {
 private:
 	sf::Sprite choose_property = sprite_mangr.makeSprite("Resources/Textures/Choose Property.png");
+	
+	Button b_forest_prop;
+	Button b_volcano_prop;
+	Button b_beach_prop;
+
 public:
 	ChooseProperty ();
 	~ChooseProperty ();
