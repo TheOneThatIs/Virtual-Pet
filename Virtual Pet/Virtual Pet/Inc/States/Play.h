@@ -4,7 +4,13 @@
 #include "UI\Button.h"
 #include "Util\Animation.h"
 
+#include "Events\EventManager.h"
+#include "Events\Event1.h"
+
 class Play: public State{
+    EventManager eventManager;
+    Event1 event1;
+
 	SpriteManager sprite_mangr;
 
 public:

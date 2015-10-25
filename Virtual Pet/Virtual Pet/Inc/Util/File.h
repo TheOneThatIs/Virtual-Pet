@@ -14,5 +14,13 @@ public:
    void setFile (std::string path);
 
    void write (std::string data);
-   void read (int position, std::string delimiter);
+   void append (std::string data);
+
+   std::string read (int position, char delimeter);
+
+   std::string getPath ();
+
+   int search (std::string data);
+
+   void wipe ();
 };

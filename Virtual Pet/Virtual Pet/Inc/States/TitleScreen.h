@@ -3,8 +3,12 @@
 #include "States\State.h"
 #include "UI\Button.h"
 
+#include "Play.h"
+#include "Options.h"
+
 class TitleScreen: public State {
-	Button button = Button("New Game", 350, 300, 100, 25);
+	Button b_newGame = Button("New Game", 375, 250, 138, 38, sf::Color::White);
+    Button b_options = Button ("", 835, 545, 60, 50, sf::Color::White, sprite_mangr.makeSprite ("Resources/Textures/UI/Config.png"), sprite_mangr.makeSprite ("Resources/Textures/UI/Config.png"));
 	sf::Sprite title;
 public:
 	TitleScreen ();

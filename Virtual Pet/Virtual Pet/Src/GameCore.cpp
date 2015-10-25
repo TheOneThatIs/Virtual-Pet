@@ -40,7 +40,7 @@ void GameCore::gameLoop() {
 }
 
 void GameCore::draw () {
-	window.clear (Color::White);
+	window.clear (Color::Black);
 	manager.drawStates (&window);
 	window.display ();
 }
